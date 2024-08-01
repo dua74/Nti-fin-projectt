@@ -1,0 +1,228 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 1rem;
+}
+body {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 20px;
+  font-style: normal;
+  height: 100vh;
+}
+/* .dark {
+  background-color: black;
+  color: white;
+} */
+
+.nav-link {
+  color: #b17ec3;
+}
+.nav-link:hover {
+  color: #6f42c1;
+}
+.nav-pills .nav-item .active {
+  color: white;
+  background: #6f42c1;
+}
+ul li {
+  /* line-height: 40px;
+  text-align: center; */
+  padding-top: 15px;
+}
+.hidden-form {
+  display: none;
+
+  width: 40%;
+  margin: auto;
+  height: 65%;
+  position: absolute;
+  left: 32%;
+  top: 30%;
+  z-index: 10;
+  background-image: linear-gradient(to bottom, white, #b17ec3, white);
+  border-radius: 3%;
+}
+form {
+  /* border-radius: 5px; */
+  padding: 20px;
+  width: 70%;
+  background-color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .dimmed {
+  opacity: 0.5;
+  pointer-events: none;
+} */
+
+input {
+  height: 40%;
+  width: 100%;
+  font-size: 1rem;
+  padding: 3px;
+  border: hwb(261 26% 24%) 1px solid;
+  /* border: #b17ec3 solid 1px; */
+}
+.btn-primary {
+  background-color: #6f42c1;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: white;
+  color: #6f42c1;
+}
+.main-1 {
+  margin-bottom: 30px;
+}
+
+.features {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.features .row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 80%;
+  /* height: 700px; */
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+  /* margin-top: 4%; */
+  /* margin-bottom: 4%; */
+}
+.row .col-fl {
+  width: 30%;
+  height: 40%;
+  margin: 1%;
+  border: #b17ec3 solid 0.3px;
+  padding: 20px;
+}
+.row .col-fl:hover {
+  border: double #b17ec3;
+}
+.features div h1 {
+  text-align: center;
+  /* text-decoration: underline 0.3px; */
+}
+
+.col-fl div h3 {
+  color: #6f42c1;
+}
+
+@media (max-width: 768px) {
+  .features .row {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 80%;
+    line-height: 30px;
+
+    margin: auto;
+    margin-top: 50px;
+  }
+
+  .row .col-fl {
+    height: 300px;
+    padding: 20px;
+
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 923px) {
+  .features .row {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    line-height: 30px;
+  }
+  .row .col-fl {
+    width: 70%;
+    height: 270px;
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 923px) and (max-width: 992px) {
+  .features .row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 95%;
+    margin: auto;
+    /* height: 780px; */
+    margin-top: 50px;
+  }
+  .row .col-fl {
+    padding: 20px;
+    width: 40%;
+    height: 370px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .features .row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    /* line-height: 30px; */
+  }
+  .row .col-fl {
+    width: 30%;
+    height: 380px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features .row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    line-height: 25px;
+  }
+  .row .col-fl {
+    width: 31%;
+    height: 380px;
+  }
+}
+.sec- {
+  margin-bottom: 50px;
+}
+.btn-outline-primary {
+  color: #6f42c1;
+  border: none;
+}
+.btn-outline-primary:hover {
+  background-color: #6f42c1;
+  color: white;
+}
+
+.chang-br-col {
+  border: #6f42c1 solid 0.2px;
+}
+.text-bg-change {
+  background-color: #6f42c1;
+  color: white;
+}
+/* document.getElementById("mod").addEventListener("click", function () {
+  document.getElementById("bd").classList.toggle("dark");
+});
+ i want to apply dark mode
+ */
